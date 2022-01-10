@@ -53,7 +53,7 @@ public class SavingsCalculator {
             debits[i] = Float.parseFloat(debitsAsString[i]);
         }
 
-        final SavingsCalculator calculator = new SavingsCalculator(debits, credits);
+        final SavingsCalculator calculator = new SavingsCalculator(credits, debits);
         float netSavings = calculator.Calculate();
         System.out.println("Net Savings = " + netSavings + ", remaining days in month = " + remainingDaysInMonth(LocalDate.now()));
     }
