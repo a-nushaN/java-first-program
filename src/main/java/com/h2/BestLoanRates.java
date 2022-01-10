@@ -26,5 +26,6 @@ public class BestLoanRates {
         if (bestRate == 0.0f)
             System.out.println("No available rates for term: " + loanTermInYears + " years");
         System.out.println("Best Available Rate: " + getRates(loanTermInYears) + "%");
+        scanner.close();
     }
 }
