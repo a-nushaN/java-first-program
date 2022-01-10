@@ -4,7 +4,8 @@ import java.time.LocalDate;
 import java.time.YearMonth;
 
 public class SavingsCalculator {
-    private float[] debits, credits;
+    private float[] debits;
+    private float[] credits;
 
     public SavingsCalculator(float[] debits, float[] credits) {
         this.debits = debits;
